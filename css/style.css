@@ -1,0 +1,149 @@
+body {
+    background-image: url('https://img.freepik.com/free-photo/gambling-slot-machine-casino_53876-123085.jpg?w=1060&t=st=1702500648~exp=1702501248~hmac=68e1c5f8be6a8121c45e851e5971508f96e0e5e996f28cb4e36e605faac787ea');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+    background-color: #ffcc00;
+    color: #cc0000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+h1 {
+    background-color: #fff; 
+    padding: 10px; 
+    border: 5px solid #cc0000; 
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(37, 0, 0, 0.5); 
+    color: #cc0000; 
+    margin-top: 20px;
+}
+h2 {
+    font-size: 30px;
+}
+table {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background-color: #ff9933;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+td {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    width: 180px;
+    height: 200px;
+    border: 4px solid #ff9933;
+    font-size: 45px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #cc0000;
+    position: relative;
+    overflow: hidden;
+}
+
+td:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+    background: #ffcc00;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+}
+#instructions {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: #fff;
+    padding: 10px;
+    font-size: 23px;
+    border: 2px solid #cc0000;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    text-align: center; 
+}
+button {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    margin-top: 15px;
+    width: 200px;
+    height: 70px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #cc0000;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #990000;
+}
+#money
+ {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #cc0000;
+    font-size: 40px;
+    background-color: #fff; 
+    padding: 10px;
+    border: 5px solid #ffcc00; 
+    border-radius: 40px;
+}
+#result {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 24px;
+    margin-top: 10px;
+    color: #e44d26;
+    background-color: #fff; 
+    color: #cc0000; 
+    border: 2px solid #cc0000; 
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 20px;
+}
+@media screen and (max-width: 620px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    td {
+        width: 120px;
+        height: 150px;
+        font-size: 24px;
+    }
+
+    td:before {
+        width: 60%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 269px) {
+    td {
+        width: 100px;
+        height: 120px;
+        font-size: 18px;
+    }
+
+    td:before {
+        width: 50%;
+        height: 50%;
+    }
+}
